@@ -1,0 +1,5 @@
+cvzone
+mediapipe==0.10.21
+numpy
+PyAutoGUI==0.9.54
+ultralytics

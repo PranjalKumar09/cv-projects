@@ -35,3 +35,6 @@ Thumbs.db
 # Miscellaneous files
 *.sqlite
 *.db
+
+# High size files
+static/5229647-uhd_3840_2160_30fps.mp4
