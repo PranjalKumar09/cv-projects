@@ -4,10 +4,10 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
+      - add-new-files
   pull_request:
     branches:
-      - main
+      - add-new-files
 
 jobs:
   build-and-push:
