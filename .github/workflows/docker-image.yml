@@ -27,7 +27,7 @@ jobs:
 
       # Build the Docker image
       - name: Build Docker image
-        run: docker build -t  pranjalkumar09/computer_vision_projects:latestt .
+        run: docker build -t  pranjalkumar09/computer_vision_projects:latest .
 
       # Push the Docker image to Docker Hub
       - name: Push Docker image
