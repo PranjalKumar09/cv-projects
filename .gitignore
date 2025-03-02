@@ -1,0 +1,37 @@
+# ===============================
+# Author: Pranjal Kumar Shukla
+# GitHub: https://github.com/PranjalKumar09/cv-projects/
+# ===============================
+
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# Environment files
+*.env
+*.venv
+*.virtualenv
+
+# Logs and temporary files
+*.log
+*.bak
+*.swp
+
+# Miscellaneous files
+*.sqlite
+*.db
