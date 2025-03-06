@@ -1,0 +1,32 @@
+# ===============================
+# Author: Pranjal Kumar Shukla
+# GitHub: https://github.com/PranjalKumar09/cv-projects/
+# ===============================
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cv-app-deployment
+  labels:
+    app: cv-app
+spec:
+  replicas: 3  # Number of replicas
+  selector:
+    matchLabels:
+      app: cv-app
+  template:
+    metadata:
+      labels:
+        app: cv-app
+    spec:
+      containers:
+        - name: cv-app
+          image: pranjalkumar09/computer_vision_projects:latest  # Replace with your Docker image URL
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: static-volume
+              mountPath: /app/static  # Make sure to adjust based on your folder structure
+      volumes:
+        - name: static-volume
+          configMap:
+            name: static-files-config  # Will be used to mount static files
